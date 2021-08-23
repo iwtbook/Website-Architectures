@@ -1,0 +1,88 @@
+/* styles.css */
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #888;
+  border: none;
+  color: white;
+  font-size: 0.75em;
+}
+
+button:hover {
+  background-color: #666 ;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #444;
+}
+
+h2 {
+  margin-top: 60px;
+}
+
+header {
+  display: flex;
+  justify-items: center;
+  font-size: 22px;
+  width: 100%;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 700px;
+}
+
+main {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+main section {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 90%;
+}
+
+section > a > button {
+  /* border-radius: 5px; */
+  margin-top: 30px;
+  padding: 10px 50px;
+}
+
+.structure-list {
+  align-items: center;
+  border: 1.5px solid gray;
+  border-radius: 4px;
+  column-gap: 40px;
+  display: grid;
+  grid-template-areas:
+  'wideTree narrowTree'
+  'pureLinear blank';
+  grid-template-columns: calc(50% - 40px) (50% - 40px);
+  justify-items: center;
+  list-style-type: none;
+  margin: 20px auto 0 auto;
+  max-width: 700px;
+  padding: 20px;
+  row-gap: 30px;
+  width: 100%;
+}
+
+.structure-list > li {
+  border-radius: 5px;
+  text-align: center;
+  user-select: none;
+  width: 100%;
+}
+
+.structure-list button {
+  padding: 10px 0;
+  width: 100%;
+}

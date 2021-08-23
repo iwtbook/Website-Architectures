@@ -1,0 +1,112 @@
+/* styles.css */
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #888;
+  border: none;
+  color: white;
+  font-size: 0.75em;
+}
+
+button:hover {
+  background-color: #666 ;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #444;
+}
+
+header {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  height: 40px;
+  justify-items: center;
+  width: 100%;
+}
+
+header a {
+  color: white;
+  display: block;
+  font-size: 1.4em;
+  font-weight: 200;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+main {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+main section {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 90%;
+}
+
+main > details {
+  margin: 50px auto 0 auto;
+  max-width: 700px;
+  width: 100%;
+}
+
+nav > a button {
+  padding: 10px 50px;
+}
+
+section > h1 {
+  margin-bottom: 20px;
+}
+
+nav {
+  align-items: center;
+  column-gap: 40px;
+  display: grid;
+  grid-template-areas:
+  'one two'
+  'home blank';
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  margin: 40px auto 0 auto;
+  max-width: 700px;
+  row-gap: 30px;
+  width: 100%;
+}
+
+nav > a {
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  user-select: none;
+  width: 100%;
+}
+
+nav button {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.nav-three-choices {
+  column-gap: 5%;
+  grid-template-areas:
+  'one two three';
+  grid-template-columns: 30% 30% 30%;
+}
+
+.nav-wide-button {
+  grid-template-areas: 
+  'one one'
+  'home blank';
+}
+
+#section-map {
+  margin-top: 40px;
+  max-width: none;
+  width: 100%;
+}
